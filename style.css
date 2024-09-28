@@ -1,0 +1,294 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.scroll-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Product Cards Section */
+#products {
+    padding: 50px;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #f0f0f0;
+    padding: 50px;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+/* Blog Section */
+#blog {
+    padding: 50px;
+    text-align: center;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Section */
+#about {
+    padding: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-container,
+    .testimonial-container,
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* General Header Styling */
+.main-header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Styling in Circle */
+.logo a {
+    display: block;
+    background-color:red; 
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100px; /* Width of the circle */
+    text-align: center;
+    border-radius: 50%; /* Makes the element circular */
+    transition: background-color 0.3s ease;
+}
+
+.logo a:hover {
+    background-color: #e5533d; /* Darker shade when hovered */
+}
+
+
+nav {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Sticky Header on Scroll */
+.main-header.sticky {
+    background-color: #222;
+    transition: background-color 0.3s ease;
+}
+/* Header Section */
+.hero-header {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(252, 133, 7);
+    text-align: center;
+    overflow: hidden; /* Hide overflow */
+    background-image: url('Decorating\ plants.jpeg'); /* Replace with your image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+    animation: moveBackground 10s linear infinite; /* Animation for background */
+}
+
+/* Keyframes for Background Movement */
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%; /* Start position */
+    }
+    100% {
+        background-position: 100% 100%; /* End position */
+    }
+}
+
+button {
+    background-color: #ff6347; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e5533d; /* Darker shade on hover */
+}
+.log {
+    display: inline-block; /* Allow the logo to be treated as a block for alignment */
+    overflow: hidden; /* Hide any overflow to ensure a circular shape */
+    border-radius: 50%; /* Make the link circular */
+    width: 150px; /* Set the desired width for the logo */
+    height: 150px; /* Set the desired height to match width */
+}
+
+.log img {
+    width: 100%; /* Make the image fill the circle */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent extra space below the image */
+    border-radius: 50%; /* Ensure the image itself is circular */
+    transition: transform 0.3s ease; /* Animation effect on hover */
+}
+
+.log img:hover {
+    transform: scale(1.05); /* Slightly enlarge the logo on hover */
+}
+

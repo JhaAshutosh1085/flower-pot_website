@@ -1,0 +1,27 @@
+/* Gardening Tips Section */
+#gardening-tips {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.tips-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.tips-list li {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.tips-list li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

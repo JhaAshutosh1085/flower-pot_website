@@ -1,0 +1,50 @@
+/* Product Cards Section */
+#products {
+    padding: 50px;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 30%; /* Ensure 3 cards per row */
+    flex: 1 1 calc(33.333% - 40px); /* Responsive flex for 3 cards */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-card {
+        flex: 1 1 calc(50% - 40px); /* 2 cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card {
+        flex: 1 1 100%; /* 1 card per row on mobile screens */
+    }
+}
